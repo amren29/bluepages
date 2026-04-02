@@ -1,28 +1,53 @@
 .card {
   display: grid;
-  gap: 1rem;
-  padding: 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: 1rem;
+  gap: 1.25rem;
+  padding: 1.25rem 1.35rem;
+  border: 2px solid #eccf62;
+  border-radius: 1.1rem;
   background: var(--surface);
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 10px 24px rgba(22, 52, 91, 0.08);
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  align-items: start;
+}
+
+.topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+  align-items: center;
 }
 
 .category {
-  font-size: 0.85rem;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  background: #fff2a8;
+  font-size: 0.78rem;
+  font-weight: 700;
   text-transform: capitalize;
-  color: var(--text-muted);
+  color: #5f4b00;
+}
+
+.rating {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
 }
 
 .title {
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-size: 1.3rem;
+  line-height: 1.15;
   color: var(--text-strong);
 }
 
@@ -30,10 +55,11 @@
   align-self: start;
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: #ffd84d;
+  color: #3f3300;
   font-size: 0.78rem;
   font-weight: 700;
+  border: 1px solid #e1ba2a;
 }
 
 .meta {
@@ -43,17 +69,34 @@
   font-size: 0.95rem;
 }
 
+.metaLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
 .description {
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.15rem;
+  border-top: 1px solid #e7edf7;
 }
 
 .link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem;
+  min-height: 2.9rem;
   border-radius: 0.85rem;
+  padding: 0 1rem;
   background: var(--ink);
   color: #ffffff;
   font-weight: 700;
@@ -61,4 +104,20 @@
 
 .link:hover {
   background: #222222;
+}
+
+@media (min-width: 900px) {
+  .card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .actions {
+    border-top: none;
+    border-left: 1px solid #e7edf7;
+    padding-top: 0;
+    padding-left: 1.1rem;
+    min-width: 160px;
+    justify-content: flex-end;
+  }
 }

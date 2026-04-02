@@ -1,16 +1,16 @@
 :root {
-  --background: #f7f1e8;
-  --surface: #fffdf9;
-  --surface-strong: #efe4d2;
-  --border: #dbcdb8;
-  --text: #4b4032;
-  --text-strong: #221d18;
-  --text-muted: #786b5a;
-  --accent: #a65b2e;
-  --accent-hover: #8f4d25;
-  --accent-soft: #f2d4bd;
-  --ink: #2b241f;
-  --card-shadow: 0 14px 30px rgba(54, 38, 18, 0.08);
+  --background: #eef5ff;
+  --surface: #ffffff;
+  --surface-strong: #dfeeff;
+  --border: #bfd4f1;
+  --text: #28405f;
+  --text-strong: #10233d;
+  --text-muted: #5a7497;
+  --accent: #1f67c7;
+  --accent-hover: #1856a6;
+  --accent-soft: #d7e8ff;
+  --ink: #16345b;
+  --card-shadow: 0 14px 30px rgba(22, 52, 91, 0.12);
 }
 
 * {
@@ -26,8 +26,8 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.7), transparent 32%),
-    linear-gradient(180deg, #f4e8d8 0%, var(--background) 32%, #f8f3ec 100%);
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 30%),
+    linear-gradient(180deg, #d7e8ff 0%, var(--background) 34%, #f4f9ff 100%);
   color: var(--text);
   font-family:
     Georgia,
