@@ -11,7 +11,6 @@ type BusinessDetailPageProps = {
 };
 
 export async function generateStaticParams() {
-  // Prebuild every mock business page so the detail view stays static and fast.
   return getAllBusinesses().map((business) => ({
     id: business.id,
   }));
@@ -35,6 +34,24 @@ export async function generateMetadata({
   };
 }
 
+function StarRating({ rating }: { rating: number }) {
+  const full = Math.floor(rating);
+  const hasHalf = rating - full >= 0.3;
+  const stars: string[] = [];
+
+  for (let i = 0; i < 5; i++) {
+    if (i < full) stars.push("\u2605");
+    else if (i === full && hasHalf) stars.push("\u2605");
+    else stars.push("\u2606");
+  }
+
+  return (
+    <span className={styles.rating} aria-label={`${rating} out of 5`}>
+      {stars.join("")} {rating.toFixed(1)}/5
+    </span>
+  );
+}
+
 export default async function BusinessDetailPage({ params }: BusinessDetailPageProps) {
   const { id } = await params;
   const business = getBusinessById(id);
@@ -46,6 +63,9 @@ export default async function BusinessDetailPage({ params }: BusinessDetailPageP
   return (
     <main className={styles.page}>
       <Link href="/results?location=Kuala%20Lumpur" className={styles.backLink}>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M10 4l-4 4 4 4" />
+        </svg>
         Back to results
       </Link>
 
@@ -58,7 +78,7 @@ export default async function BusinessDetailPage({ params }: BusinessDetailPageP
           {business.isFeatured ? <span className={styles.badge}>Featured</span> : null}
         </div>
 
-        <p className={styles.rating}>Rating {business.rating.toFixed(1)}/5</p>
+        <StarRating rating={business.rating} />
         <p className={styles.description}>{business.description}</p>
 
         <section className={styles.details}>
@@ -77,7 +97,7 @@ export default async function BusinessDetailPage({ params }: BusinessDetailPageP
                 {business.website}
               </a>
             ) : (
-              <p>Website not listed yet</p>
+              <p>Not listed</p>
             )}
           </div>
         </section>
@@ -97,7 +117,7 @@ export default async function BusinessDetailPage({ params }: BusinessDetailPageP
               Visit Website
             </a>
           ) : (
-            <span className={styles.disabledAction}>Visit Website Unavailable</span>
+            <span className={styles.disabledAction}>No Website</span>
           )}
         </div>
       </article>

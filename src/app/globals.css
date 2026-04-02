@@ -1,16 +1,26 @@
 :root {
-  --background: #eef5ff;
+  --background: #f8fafc;
   --surface: #ffffff;
-  --surface-strong: #dfeeff;
-  --border: #bfd4f1;
-  --text: #28405f;
-  --text-strong: #10233d;
-  --text-muted: #5a7497;
-  --accent: #1f67c7;
-  --accent-hover: #1856a6;
-  --accent-soft: #d7e8ff;
-  --ink: #16345b;
-  --card-shadow: 0 14px 30px rgba(22, 52, 91, 0.12);
+  --surface-strong: #f1f5f9;
+  --border: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --text: #334155;
+  --text-strong: #0f172a;
+  --text-muted: #64748b;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: #dbeafe;
+  --accent-subtle: #eff6ff;
+  --ink: #0f172a;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --card-shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+  --green: #059669;
+  --green-soft: #d1fae5;
+  --amber: #d97706;
+  --amber-soft: #fef3c7;
+  --radius: 0.75rem;
+  --radius-lg: 1rem;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -25,16 +35,14 @@ html {
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 30%),
-    linear-gradient(180deg, #d7e8ff 0%, var(--background) 34%, #f4f9ff 100%);
+  background: var(--background);
   color: var(--text);
   font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 a {

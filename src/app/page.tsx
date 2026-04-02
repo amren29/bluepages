@@ -14,11 +14,12 @@ export default function HomePage() {
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>Local directory MVP</p>
-        <h1 className={styles.title}>Find Local Services</h1>
+        <p className={styles.eyebrow}>Local Directory</p>
+        <h1 className={styles.title}>
+          Find trusted local services near you
+        </h1>
         <p className={styles.subtitle}>
-          Browse trusted local businesses with simple search, clear contact details, and no
-          unnecessary steps.
+          Search local businesses in Kuala Lumpur. Clear contact details, no unnecessary steps.
         </p>
 
         <div className={styles.searchPanel}>
@@ -27,16 +28,16 @@ export default function HomePage() {
 
         <div className={styles.quickFacts}>
           <div className={styles.factCard}>
-            <strong>18 businesses</strong>
-            <span>Stored in one local JSON file</span>
+            <strong>18 listings</strong>
+            <span>Local businesses</span>
           </div>
           <div className={styles.factCard}>
             <strong>Featured first</strong>
-            <span>Priority listings stay visible in results</span>
+            <span>Priority results</span>
           </div>
           <div className={styles.factCard}>
-            <strong>Static and fast</strong>
-            <span>No database and no external API calls</span>
+            <strong>Instant</strong>
+            <span>No loading, static data</span>
           </div>
         </div>
       </section>
@@ -44,11 +45,11 @@ export default function HomePage() {
       <section className={styles.section}>
         <div className={styles.sectionHeading}>
           <div>
-            <p className={styles.sectionLabel}>Popular searches</p>
-            <h2>Featured businesses in Kuala Lumpur</h2>
+            <p className={styles.sectionLabel}>Popular</p>
+            <h2>Featured businesses</h2>
           </div>
           <p className={styles.sectionText}>
-            A few sample listings to make the homepage useful even before the first search.
+            Top-rated listings in Kuala Lumpur
           </p>
         </div>
 
