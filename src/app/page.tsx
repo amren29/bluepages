@@ -1,66 +1,63 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import BusinessCard from "@/components/BusinessCard";
+import SearchForm from "@/components/SearchForm";
+import { getFeaturedBusinesses } from "@/lib/businesses";
 import styles from "./page.module.css";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Find Local Services",
+};
+
+export default function HomePage() {
+  const featuredBusinesses = getFeaturedBusinesses(4);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        <p className={styles.eyebrow}>Local directory MVP</p>
+        <h1 className={styles.title}>Find Local Services</h1>
+        <p className={styles.subtitle}>
+          Browse trusted local businesses with simple search, clear contact details, and no
+          unnecessary steps.
+        </p>
+
+        <div className={styles.searchPanel}>
+          <SearchForm />
+        </div>
+
+        <div className={styles.quickFacts}>
+          <div className={styles.factCard}>
+            <strong>18 businesses</strong>
+            <span>Stored in one local JSON file</span>
+          </div>
+          <div className={styles.factCard}>
+            <strong>Featured first</strong>
+            <span>Priority listings stay visible in results</span>
+          </div>
+          <div className={styles.factCard}>
+            <strong>Static and fast</strong>
+            <span>No database and no external API calls</span>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionHeading}>
+          <div>
+            <p className={styles.sectionLabel}>Popular searches</p>
+            <h2>Featured businesses in Kuala Lumpur</h2>
+          </div>
+          <p className={styles.sectionText}>
+            A few sample listings to make the homepage useful even before the first search.
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className={styles.grid}>
+          {featuredBusinesses.map((business) => (
+            <BusinessCard key={business.id} business={business} />
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

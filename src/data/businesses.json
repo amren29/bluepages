@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ampang-plumbing-co",
+    "name": "Ampang Plumbing Co.",
+    "category": "plumber",
+    "rating": 4.8,
+    "address": "12 Jalan Mamanda 7, Ampang, Kuala Lumpur",
+    "phone": "+60342561234",
+    "website": "https://ampangplumbing.example.com",
+    "description": "Residential plumbing repairs, water heater installs, and emergency leak checks.",
+    "isFeatured": true
+  },
+  {
+    "id": "brickfields-beauty-house",
+    "name": "Brickfields Beauty House",
+    "category": "salon",
+    "rating": 4.6,
+    "address": "22 Jalan Tun Sambanthan 4, Brickfields, Kuala Lumpur",
+    "phone": "+60322735511",
+    "website": "https://brickfieldsbeauty.example.com",
+    "description": "Haircuts, colouring, and quick styling for daily appointments.",
+    "isFeatured": false
+  },
+  {
+    "id": "sentul-electric-care",
+    "name": "Sentul Electric Care",
+    "category": "electrician",
+    "rating": 4.7,
+    "address": "45 Jalan Sultan Azlan Shah, Sentul, Kuala Lumpur",
+    "phone": "+60340424567",
+    "website": "https://sentulelectric.example.com",
+    "description": "Home rewiring, lighting setup, and switchboard troubleshooting.",
+    "isFeatured": true
+  },
+  {
+    "id": "ttdi-dental-clinic",
+    "name": "TTDI Dental Clinic",
+    "category": "dentist",
+    "rating": 4.9,
+    "address": "9 Lorong Rahim Kajai 13, TTDI, Kuala Lumpur",
+    "phone": "+60377271290",
+    "website": "https://ttdidental.example.com",
+    "description": "General dentistry, scaling, and same-week appointments for families.",
+    "isFeatured": false
+  },
+  {
+    "id": "cheras-locksmith-24",
+    "name": "Cheras Locksmith 24",
+    "category": "locksmith",
+    "rating": 4.5,
+    "address": "61 Jalan Cheras, Taman Maluri, Kuala Lumpur",
+    "phone": "+60392008841",
+    "website": "",
+    "description": "Door unlocks, lock replacement, and key duplication service.",
+    "isFeatured": false
+  },
+  {
+    "id": "bangsar-clean-living",
+    "name": "Bangsar Clean Living",
+    "category": "cleaning service",
+    "rating": 4.7,
+    "address": "18 Jalan Telawi 3, Bangsar, Kuala Lumpur",
+    "phone": "+60322881107",
+    "website": "https://bangsarclean.example.com",
+    "description": "Weekly home cleaning, move-out cleaning, and office tidy-ups.",
+    "isFeatured": true
+  },
+  {
+    "id": "setapak-auto-workshop",
+    "name": "Setapak Auto Workshop",
+    "category": "car repair",
+    "rating": 4.4,
+    "address": "77 Jalan Genting Klang, Setapak, Kuala Lumpur",
+    "phone": "+60341423355",
+    "website": "https://setapakauto.example.com",
+    "description": "Routine servicing, brake checks, and engine diagnostics.",
+    "isFeatured": false
+  },
+  {
+    "id": "mont-kiara-pet-care",
+    "name": "Mont Kiara Pet Care",
+    "category": "veterinary",
+    "rating": 4.8,
+    "address": "3 Jalan Kiara 1, Mont Kiara, Kuala Lumpur",
+    "phone": "+60362016672",
+    "website": "https://montkiarapet.example.com",
+    "description": "Pet consultations, vaccinations, and grooming referrals.",
+    "isFeatured": false
+  },
+  {
+    "id": "pudu-fresh-florist",
+    "name": "Pudu Fresh Florist",
+    "category": "florist",
+    "rating": 4.3,
+    "address": "114 Jalan Pudu, Kuala Lumpur",
+    "phone": "+60392216400",
+    "website": "",
+    "description": "Daily bouquet deliveries, event flowers, and gift wrapping.",
+    "isFeatured": false
+  },
+  {
+    "id": "desa-park-city-tutors",
+    "name": "Desa ParkCity Tutors",
+    "category": "tutor",
+    "rating": 4.9,
+    "address": "2 Persiaran Residen, Desa ParkCity, Kuala Lumpur",
+    "phone": "+60362791244",
+    "website": "https://desaparktutors.example.com",
+    "description": "Home tuition and small-group classes for primary and secondary students.",
+    "isFeatured": false
+  },
+  {
+    "id": "kl-pest-response",
+    "name": "KL Pest Response",
+    "category": "pest control",
+    "rating": 4.6,
+    "address": "28 Jalan Raja Abdullah, Kampung Baru, Kuala Lumpur",
+    "phone": "+60326987188",
+    "website": "https://klpestresponse.example.com",
+    "description": "Fast pest treatment for homes, restaurants, and offices.",
+    "isFeatured": true
+  },
+  {
+    "id": "midvalley-print-shop",
+    "name": "Mid Valley Print Shop",
+    "category": "printing",
+    "rating": 4.4,
+    "address": "15 Lingkaran Syed Putra, Mid Valley, Kuala Lumpur",
+    "phone": "+60322017709",
+    "website": "https://midvalleyprint.example.com",
+    "description": "Business cards, flyers, banners, and quick document printing.",
+    "isFeatured": false
+  },
+  {
+    "id": "wangsa-movers",
+    "name": "Wangsa Movers",
+    "category": "moving service",
+    "rating": 4.7,
+    "address": "40 Jalan Wangsa Delima, Wangsa Maju, Kuala Lumpur",
+    "phone": "+60341495420",
+    "website": "https://wangsamovers.example.com",
+    "description": "Small apartment moves, packing help, and furniture transport.",
+    "isFeatured": false
+  },
+  {
+    "id": "bukit-bintang-phone-fix",
+    "name": "Bukit Bintang Phone Fix",
+    "category": "phone repair",
+    "rating": 4.5,
+    "address": "5 Jalan Sultan Ismail, Bukit Bintang, Kuala Lumpur",
+    "phone": "+60321457783",
+    "website": "https://phonefixbb.example.com",
+    "description": "Screen replacement, battery swaps, and software troubleshooting.",
+    "isFeatured": false
+  },
+  {
+    "id": "kepong-cycle-centre",
+    "name": "Kepong Cycle Centre",
+    "category": "bike repair",
+    "rating": 4.6,
+    "address": "31 Jalan Metro Perdana, Kepong, Kuala Lumpur",
+    "phone": "+60362502391",
+    "website": "",
+    "description": "Bike tune-ups, brake servicing, and commuter accessory installs.",
+    "isFeatured": false
+  },
+  {
+    "id": "old-klang-road-physio",
+    "name": "Old Klang Road Physio",
+    "category": "physiotherapy",
+    "rating": 4.8,
+    "address": "88 Jalan Klang Lama, Kuala Lumpur",
+    "phone": "+60379832214",
+    "website": "https://okrphysio.example.com",
+    "description": "Recovery sessions for sports injuries, posture pain, and mobility work.",
+    "isFeatured": false
+  },
+  {
+    "id": "damansara-heights-cafe",
+    "name": "Damansara Heights Cafe",
+    "category": "cafe",
+    "rating": 4.3,
+    "address": "16 Jalan Setiabakti, Damansara Heights, Kuala Lumpur",
+    "phone": "+60320941102",
+    "website": "https://dhcafe.example.com",
+    "description": "Coffee, pastries, and casual lunch sets for the neighborhood crowd.",
+    "isFeatured": false
+  },
+  {
+    "id": "seputeh-aircon-service",
+    "name": "Seputeh Aircon Service",
+    "category": "air conditioning",
+    "rating": 4.7,
+    "address": "11 Jalan Desa Bakti, Seputeh, Kuala Lumpur",
+    "phone": "+60379801163",
+    "website": "https://seputehaircon.example.com",
+    "description": "Air-conditioner cleaning, gas top-up, and indoor unit repairs.",
+    "isFeatured": false
+  }
+]

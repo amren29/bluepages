@@ -1,0 +1,144 @@
+.page {
+  width: min(860px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.backLink {
+  display: inline-flex;
+  width: fit-content;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.card {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.category {
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.topRow h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+  color: var(--text-strong);
+}
+
+.badge {
+  align-self: start;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.rating {
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.description {
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.detailItem {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--surface-strong);
+}
+
+.detailItem span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.detailItem a,
+.detailItem p {
+  color: var(--text-strong);
+  line-height: 1.6;
+}
+
+.actions {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.primaryAction,
+.secondaryAction,
+.disabledAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: 0.9rem;
+  padding: 0 1.25rem;
+  font-weight: 700;
+}
+
+.primaryAction {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.primaryAction:hover {
+  background: var(--accent-hover);
+}
+
+.secondaryAction {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text-strong);
+}
+
+.disabledAction {
+  background: #efe7dc;
+  color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+  .page {
+    width: min(900px, calc(100% - 3rem));
+    padding-top: 3rem;
+  }
+
+  .details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .actions {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
